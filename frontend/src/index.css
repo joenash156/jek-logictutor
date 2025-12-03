@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+:root {
+	--text: #060404;
+	--background: #fbf9f9;
+	--primary: #68ba4a;
+	--secondary: #b3ccb8;
+	--accent: #8baab1;
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+	width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+	background: #e8f5e9;
+	border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+	background: linear-gradient(to bottom, #68ba4a, #8baab1);
+	border-radius: 10px;
+	transition: background 0.3s ease;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(to bottom, #5ca03e, #7a9aa0);
+}
+
+.prose ul {
+  list-style-type: disc;
+  margin-left: 1.25rem; 
+}
+
+.prose ol {
+	list-style-type: decimal;
+	margin-left: 1.25rem; 
+}
+
+.lesson-content p {
+	margin: 0 0 1em 0;
+}
+.lesson-content p:last-child {
+	margin-bottom: 0;
+}
+.lesson-content h1,
+.lesson-content h2,
+.lesson-content h3,
+.lesson-content h4,
+.lesson-content h5,
+.lesson-content h6 {
+	margin: 1.5em 0 0.75em 0;
+}
+.lesson-content h1:first-child,
+.lesson-content h2:first-child,
+.lesson-content h3:first-child,
+.lesson-content h4:first-child,
+.lesson-content h5:first-child,
+.lesson-content h6:first-child {
+	margin-top: 0;
+}
+.lesson-content ul,
+.lesson-content ol {
+	margin: 0.5em 0;
+	padding-left: 1.5em;
+}
+.lesson-content li {
+	margin: 0.25em 0;
+}
+.lesson-content blockquote {
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid #68ba4a;
+}
+.lesson-content pre {
+	margin: 1em 0;
+	padding: 1em;
+	background: #f4f7f4;
+	border-radius: 0.5em;
+	overflow-x: auto;
+}
+.lesson-content code {
+	background: #f4f7f4;
+	padding: 0.2em 0.4em;
+	border-radius: 0.25em;
+	font-size: 0.9em;
+}
+.lesson-content pre code {
+	background: transparent;
+	padding: 0;
+}
+.lesson-content img {
+	max-width: 100%;
+	height: auto;
+	margin: 1em 0;
+}
+.lesson-content table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 1em 0;
+}
+.lesson-content th,
+.lesson-content td {
+	border: 1px solid #e8f5e9;
+	padding: 0.5em;
+	text-align: left;
+}
+.lesson-content th {
+	background: #f4f7f4;
+	font-weight: 600;
+}
+
+summary {
+	cursor: pointer;
+}
